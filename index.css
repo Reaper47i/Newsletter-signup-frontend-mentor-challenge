@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* MAIN THEME COLOURS */
+
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  --Tomato: hsl(4, 100%, 67%);
+
+  /* SCREEN SIZE */
+  --Mobile: 375px;
+  --Desktop: 1440px;
+
+  /* FONTS & SIZING */
+  --Main-font: "Roboto", sans-serif;
+  --Font-size-paragraph: 16px;
+  --Bold-weight: 700;
+  --Light-weight: 400;
+}
+
+/* <<---- STYLING CLASSES ---->> */
+
+.wh100 {
+  width: 100%;
+  height: 100%;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* <<---- STYLING CLASSES ---->> */
+
+/* <<---- BODY SECTION ---->> */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Dark-Slate-Grey);
+}
+
+.mainContainer {
+  width: 100vw;
+  height: calc(100vh - 10vh);
+}
+
+.mainBody {
+  width: 60%;
+  height: 50%;
+  background-color: var(--White);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+/* .leftComp{} */
+
+/* .rightComp{} */
+
+.rightComp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* <<---- BODY SECTION ---->> */
+
+/* FOOTER SECTION */
+footer {
+  height: 10vh;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* FOOTER SECTION */
