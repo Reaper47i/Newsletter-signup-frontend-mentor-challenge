@@ -42,6 +42,7 @@
 
 /* <<---- BODY SECTION ---->> */
 body {
+  position: relative;
   width: 100vw;
   height: 100vh;
   background-color: var(--Dark-Slate-Grey);
@@ -85,7 +86,7 @@ body {
   margin-top: 1rem;
 }
 .textArea h1 {
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: var(--Bold-weight);
 }
 .textArea ul {
@@ -136,6 +137,8 @@ body {
 
 /* FOOTER SECTION */
 footer {
+  position: absolute;
+  bottom: 0;
   height: 5vh;
 }
 .attribution {
@@ -147,6 +150,7 @@ footer {
 }
 /* FOOTER SECTION */
 
+/* <<---- Responsive Settings ---->> */
 @media screen and (max-width: 480px) {
   .mainContainer {
     display: flex;
@@ -156,3 +160,47 @@ footer {
     height: 300px;
   }
 }
+
+@media screen and (min-width: 489px) and (max-width: 1023px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainContainer {
+    height: 30%;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainContainer {
+    height: fit-content !important;
+    width: 55%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+  }
+}
+
+/* xx--- End ---xx */
